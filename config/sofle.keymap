@@ -43,28 +43,24 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LEFT)>;
-            label = "PREV_WORD";
         };
 
         nxtwd: next_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(RIGHT)>;
-            label = "NEXT_WORD";
         };
 
         lstrt: line_start {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp HOME>;
-            label = "LINE_START";
         };
 
         lend: line_end {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp END>;
-            label = "LINE_END";
         };
     };
 
@@ -83,7 +79,6 @@
         /* Left enc:  Undo / Redo (Ctrl+Z / Ctrl+Y)                           */
         /* Right enc: Vol Down / Vol Up                                        */
         qwerty_layer {
-            label = "QWERTY";
             bindings = <
     &kp GRAVE  &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                          &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
     &kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T                           &kp Y     &kp U     &kp I     &kp O    &kp P    &kp BSPC
@@ -101,7 +96,6 @@
         /* Left enc:  Prev Word / Next Word                                    */
         /* Right enc: Shift+Tab / Tab                                          */
         lower_layer {
-            label = "LOWER";
             bindings = <
     &trans     &kp F1    &kp F2    &kp F3    &kp F4    &kp F5                          &kp F6    &kp F7    &kp F8    &kp F9   &kp F10  &kp F11
     &kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                          &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp F12
@@ -119,7 +113,6 @@
         /* Left enc:  Undo / Redo                                              */
         /* Right enc: Page Down / Page Up                                      */
         raise_layer {
-            label = "RAISE";
             bindings = <
     &trans     &trans    &trans    &trans    &trans    &trans                          &trans    &trans    &trans    &trans    &trans    &trans
     &trans     &kp INS   &kp PSCRN &kp K_APP &none     &none                           &kp PG_UP &prvwd    &kp UP    &nxtwd    &kp LC(BSPC) &kp BSPC
@@ -139,7 +132,6 @@
         /* Left enc:   Zoom out / Zoom in (Ctrl+- / Ctrl+=)                   */
         /* Right enc:  Scroll down / Scroll up                                 */
         mouse_layer {
-            label = "MOUSE";
             bindings = <
     &none      &none         &none         &none         &none         &none                               &none         &none         &none         &none         &none         &none
     &none      &mkp MB4      &mkp MB5      &none         &msc SCRL_UP  &none                               &none         &none         &mmv MOVE_UP  &none         &msc SCRL_UP  &none
@@ -167,8 +159,8 @@
                 &none        &none        &none        &trans       &trans                  &trans  &trans      &none       &none       &none
             >;
             sensor-bindings = <
-                &inc_dec_kp &rgb_ug RGB_HUD &rgb_ug RGB_HUI
-                &inc_dec_kp &rgb_ug RGB_BRD &rgb_ug RGB_BRI
+                &inc_dec_kp C_VOL_DN C_VOL_UP
+                &inc_dec_kp C_PREV C_NEXT
             >;
         };
     };
