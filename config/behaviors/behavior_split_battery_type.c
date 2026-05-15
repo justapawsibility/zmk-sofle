@@ -6,6 +6,8 @@
 #include <zmk/hid.h>
 #include <zmk/battery.h>
 #include <zmk/split/bluetooth/peripheral_status.h>
+#include <zephyr/logging/log.h>
+LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #define DT_DRV_COMPAT zmk_behavior_split_battery_type
 
@@ -61,6 +63,11 @@ static void send_string(const char *s) {
 
 static int split_battery_press(struct zmk_behavior_binding *binding,
                                struct zmk_behavior_binding_event event) {
+
+    LOG_INF("split_bat PRESSED");
+
+    return ZMK_BEHAVIOR_OPAQUE;
+}
 
     uint8_t local = zmk_battery_state_of_charge();
 
