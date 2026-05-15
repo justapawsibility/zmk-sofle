@@ -194,7 +194,7 @@
                &trans        &trans        &mkp RCLK     &mkp LCLK      &trans                  &trans     &trans        &trans         &trans         &trans
             >;
             sensor-bindings = <
-                &inc_dec_kp LC(EQUAL) LC(MINUS) 
+                &inc_dec_kp LC(MINUS) LC(EQUAL)  
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
