@@ -2,7 +2,6 @@
     behaviors {
         split_bat: split_battery_type {
             compatible = "zmk,behavior-split-battery-type";
-            label = "SPLIT_BATTERY_TYPE";
             #binding-cells = <0>;
         };
     };
