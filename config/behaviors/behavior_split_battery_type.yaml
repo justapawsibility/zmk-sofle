@@ -1,0 +1,5 @@
+description: Type split battery percentages
+
+compatible: "zmk,behavior-split-battery-type"
+
+include: zero_param.yaml
