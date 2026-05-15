@@ -7,7 +7,7 @@
 #include <zmk/battery.h>
 #include <zmk/split/bluetooth/peripheral_status.h>
 
-#define DT_DRV_COMPAT zmk_behavior_split_battery_type
+#define DT_DRV_COMPAT zmk_behavior_macro
 
 static void tap_key(uint8_t keycode) {
     zmk_hid_press(keycode);
