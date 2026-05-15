@@ -1,5 +1,0 @@
-description: Split battery typing behavior
-
-compatible: "zmk,behavior-split-battery-type"
-
-include: zero_param.yaml

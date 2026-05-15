@@ -169,7 +169,7 @@
         raise_layer {
             bindings = <
     &trans     &trans    &trans    &trans    &trans    &trans                          &trans    &trans    &trans    &trans    &trans    &trans
-    &trans     &none     &none     &none     &none    &none                           &kp PG_UP &prvwd    &kp UP    &nxtwd    &kp LC(BSPC) &kp BSPC
+    &trans     &none     &none     &none     &none    &none                           &kp PG_UP &prvwd    &none    &nxtwd    &kp LC(BSPC) &kp BSPC
     &trans     &none     &prvwd    &none     &nxtwd    &none                          &kp LEFT &kp DOWN   &kp UP    &kp RIGHT &lstrt    &lend
     &trans     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &none     &trans      &trans    &none     &lstrt    &kp DEL   &lend     &none     &trans
                &trans    &trans    &trans    &trans    &trans                &trans    &trans    &trans    &trans    &trans
@@ -208,7 +208,7 @@
     &none       &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI        &none                           &none        &none        &none        &none        &none        &none
     &bootloader &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD &out OUT_TOG                           &none        &none        &none        &none        &none        &none
     &none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                                          &kp C_PREV   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &kp C_NEXT   &none
-    &none       &none        &none        &none        &none        &none                  &split_bat        &split_bat &none        &kp C_PP     &none        &none        &none        &none
+    &none       &none        &none        &none        &none        &none                  &none           &none          &none        &kp C_PP     &none        &none        &none        &none
                 &none        &none        &none        &trans       &trans                  &trans   &trans       &none        &none        &none
             >;
             sensor-bindings = <
