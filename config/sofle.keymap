@@ -45,7 +45,9 @@
             then-layer = <ADJUST>;
         };
     };
-
+    &lt {
+        tapping-term-ms = <100>;
+    }
     /* ── Macros ─────────────────────────────────────────────────────────── */
     macros {
         /* Word navigation (Ctrl+arrow) */
