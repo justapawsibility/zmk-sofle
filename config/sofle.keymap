@@ -45,9 +45,13 @@
             then-layer = <ADJUST>;
         };
     };
-    &lt {
-        tapping-term-ms = <100>;
-    }
+    /* ── Behaviors ─────────────────────────────────────────────────────────── */
+    behaviors {
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            tapping-term-ms = <100>;
+        };
+    };
     /* ── Macros ─────────────────────────────────────────────────────────── */
     macros {
         /* Word navigation (Ctrl+arrow) */
