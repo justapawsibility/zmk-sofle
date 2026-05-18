@@ -49,7 +49,7 @@
     behaviors {
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
     /* ── Macros ─────────────────────────────────────────────────────────── */
