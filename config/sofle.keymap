@@ -128,7 +128,7 @@
                &kp LGUI &kp LALT  &mt LGUI TAB   &lt 2 RET &lt 1 RET               &lt 2 SPACE   &lt 1 SPACE &mo MOUSE &kp RALT  &kp RGUI
             >;
             sensor-bindings = <
-                &inc_dec_kp PG_UP PG_DN
+                &inc_dec_msc SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -195,7 +195,7 @@
         mouse_layer {
             bindings = <
     &none      &none         &none         &none         &none          &none                              &none         &none          &none          &none          &none          &none
-    &none      &kp PSCRN     &none         &msc SCRL_UP  &none          &none                               &none         &mkp LCLK      &mkp MCLK      &mkp RCLK     &msc SCRL_UP   &none
+    &none      &kp PSCRN     &none         &msc SCRL_UP  &none          &none                               &mkp LCLK         &mkp LCLK      &mkp MCLK      &mkp RCLK     &msc SCRL_UP   &none
     &none      &none         &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &none                           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &msc SCRL_DOWN &none
     &none      &none         &none         &none         &none          &none           &none    &none     &none         &none          &none          &none          &none          &none
                &trans        &trans        &mkp RCLK     &mkp LCLK      &trans                  &trans     &trans        &trans         &trans         &trans
