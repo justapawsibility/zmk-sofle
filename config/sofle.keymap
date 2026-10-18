@@ -295,8 +295,8 @@
         };
 
         /* ── Layer 6: MAPLE — MapleStory ─────────────────────────────────
-         * Left hand: normal QWERTY, Ctrl (attack) on pinky above Shift
-         * Left thumbs: Alt (jump) + Space
+         * Left hand: normal QWERTY, Shift on pinky above Ctrl (attack)
+         * Left thumbs: Alt (jump) + Space on the two inner keys
          * Right hand: Ins/Home/PgUp/Del/End/PgDn block above arrows
          * Right thumb: hold MFN for the displaced keys + F-keys
          * No GUI keys (avoids popping out of the game)
